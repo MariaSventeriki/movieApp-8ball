@@ -1,0 +1,273 @@
+/* #header {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-size: contain;
+    background-repeat: initial;
+} */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0%;
+
+}
+
+body {
+    background-color: rgb(238, 209, 147);
+}
+
+#background {
+    margin: 0;
+    border: 0;
+    padding: 0%;
+}
+
+#background>img {
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    border: 0;
+    padding: 0%;
+}
+
+#instructions {
+    width: 100vw;
+    height: 30vh;
+}
+
+#instructions>p {
+    margin: auto;
+    padding: 0, 5%;
+    width: 50vw;
+    font-size: 150%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(5, 5, 5);
+    background-color: rgb(107, 84, 77);
+    border-radius: 2%;
+}
+
+img {
+    width: 100px;
+    height: 200px;
+}
+
+#reset {
+    background-color: rgb(151, 58, 66);
+    width: 7vw;
+    height: 5vh;
+    color: white;
+}
+
+
+#centerDiv {
+    /* background-image: url("./ball.png");
+background-size: contain;
+background-repeat: no-repeat; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+}
+
+#centerDiv>img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+#search {
+    background-color: rgb(107, 84, 77);
+    width: 50vw;
+    height: 5vh;
+    text-align: center;
+    margin-left: 21vw;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+
+
+
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+/* .card {
+    display: grid;
+} */
+
+.shake:hover {
+    animation: shake 0.5s;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+.topMovies {
+    display: inline-block;
+}
+.suggestions {
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+    color: rgb(26, 25, 25);
+    font-size: 2rem;
+    justify-content: center;
+    border: 2px solid rgb(5, 5, 5);
+    background-color: rgb(107, 84, 77);
+}
+/*css for done list
+
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+p {
+	font-weight: 600;
+}
+
+#first {
+	margin-top: 10px;
+	color: #FFCD5D;
+}
+
+#second {
+	color: #51DF70;
+
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+}
+
+
+#enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
+*/
